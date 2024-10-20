@@ -142,7 +142,7 @@
     padding: 10px 100px;
     color: #FFFFFF;
     font-size: 15px;
-    gap: 35px;
+    gap: 60px;
     border-bottom: 1px solid black;
 }
 .footer-middle-right{
@@ -153,6 +153,11 @@
 .footer-middle-left{
     display: flex;
     justify-content: space-between;
+}
+.footer-middle-middle{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
 }
 .footer-middle-left button{
     border: none;
@@ -179,10 +184,11 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-left: -114px;
+    margin-left: -80px;
 }
 .footer-middle-middle{
     flex-wrap: wrap;
+    gap: 20px;
 }
 .container7-top{
     flex-wrap: wrap;
