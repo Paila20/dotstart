@@ -16,23 +16,39 @@ const App = () => {
   };
 
   return (
-    <div className="main">
+    <div className="main" id="/">
       <img src={elements} alt="element1" className="homepage" />
       <div className="header">
+        <a href='/'>
         <div className="header-left">
           <img src={Vector} alt="logo" className="header-icon" />
           <h3>JustHome</h3>
         </div>
+        </a>
         <div className="burger-icon" onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />} 
         </div>
         <div className={`header-middle ${isMenuOpen ? 'open' : ''}`}>
-          <div className="header-link">Home <FaChevronDown /></div>
-          <div>Listings <FaChevronDown /></div>
-          <div>Members <FaChevronDown /></div>
-          <div>Blog <FaChevronDown /></div>
-          <div>Pages <FaChevronDown /></div>
+        <a href='#home' className='anchor-links'>
+          <div className="header-link">
+         home 
+             <FaChevronDown /></div>
+             </a>
+        <a href='#properties' >
+          <div className="header-link">Listings <FaChevronDown /></div>
+          </a>
+          <a href='#members' >
+          <div className="header-link">Members <FaChevronDown /></div>
+          </a>
+          <a href="#blog">
+          <div className="header-link">Blog <FaChevronDown /></div>
+          </a>
+          <a href='#pages'>
+          <div className="header-link">Pages <FaChevronDown /></div>
+          </a>
+          <a href="#contact">
           <div>Contact</div>
+          </a>
         </div>
         <div className={`header-right ${isMenuOpen ? 'open' : ''}`}>
           <img src={callIcon} alt="callIcon" /> <p>+68 685 88666</p>
@@ -43,24 +59,42 @@ const App = () => {
           <div className="header-dropdown">
             <div className="header-dropdown-content">
               <div className="header-dropdown-item">
+                <a href="/">
               <div className="header-left-dropdown">
                 <img src={Vector} alt="logo" className="header-icon" />
                 <h3>JustHome</h3>
               </div>
+              </a>
               <FaTimes   className="crossicon" onClick={toggleMenu}/>
               </div>
               <div className="dropdown-top">
+                <a href="#home" onClick={toggleMenu}>
                 <div className="header-link-dropdown">Home   <FaChevronDown /></div>
+                </a>
+                <a href="#properties" onClick={toggleMenu}>
                 <div className="header-link-dropdown" >Listings <FaChevronDown /></div>
+                </a>
+                <a href="#members" onClick={toggleMenu}>
                 <div className="header-link-dropdown">Members <FaChevronDown /></div>
+                </a>
+                <a href="#blog" onClick={toggleMenu}>
                 <div className="header-link-dropdown">Blog <FaChevronDown /></div>
+                </a>
+                <a href="#pages" onClick={toggleMenu}>
                 <div className="header-link-dropdown">Pages <FaChevronDown /></div>
+                </a>
+                <a href="#contact" onClick={toggleMenu}  >
                 <div>Contact</div>
+                </a>
               </div>
               <div className="dropdown-bottom">
+                <a href="#contact" onClick={toggleMenu}>
                 <img src={callIcon} alt="callIcon" /> <p>+68 685 88666</p>
+                </a>
                 <img src={avatar} alt="avatar" className="header-icon2" />
+                <a href="members" onClick={toggleMenu}>
                 <button>Add Property</button>
+                </a>
               </div>
             </div>
           </div>

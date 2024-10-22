@@ -18,10 +18,10 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <div className='Footer'>
+    <div className='Footer' id="pages">
        <div className='container6'>
         <div className='home-title'>
-           <h1>Recent Articles & News</h1>
+           <h5>Recent Articles & News</h5>
            <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
         </div>
         <div>
@@ -102,7 +102,9 @@ const Footer = () => {
             <h3>Become a Real Estate Agent</h3>
             <p>We only work with the best companies around the globe</p>
           </div>
+          <a href="/" >
           <button>Register Now <FaArrowRight/></button>
+          </a>
         </div>
 
        </div>
@@ -120,7 +122,7 @@ const Footer = () => {
            </div>
 
         </div>
-        <div className='footer-middle'>
+        <div className='footer-middle' id="contact">
           <div>
            <h4> Subscribe</h4>
            <div className='footer-middle-left'>
@@ -132,22 +134,48 @@ const Footer = () => {
           <div className='footer-middle-middle'>
           <div  >
             <h4> Discover</h4>
+            <a href="/">
             <p>Miami</p>
+            </a>
+            <a href="/">
             <p>NewYork</p>
+            </a>
+            <a href="/">
             <p>Chicago</p>
+            </a>
+            <a href="/">
             <p>Florida</p>
+            </a>
+            <a href="/">
             <p>Los Angeles</p>
+            </a>
+            <a href="/">
             <p>San Deiugo</p>
+            </a>
           </div>
           <div>
             <h4>Quick Links</h4>
+            <a href="#home">
             <p>About</p>
+            </a>
+            <a href="#contact">
             <p>Contact</p>
+            </a>
+            <a href="#blog">
             <p>FAQ's</p>
+            </a>
+            <a href="#blog">
             <p>Blog</p>
+            </a>
+            
             <p>Pricing Plans</p>
+            
+
             <p>Privacy Policy</p>
+          
+           
             <p>Terms & Conditions</p>
+            
           </div>
           <div>
             <h4>Contact Us</h4>
