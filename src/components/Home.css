@@ -7,12 +7,12 @@
 }
 
 .main-card {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start; 
+    width: 100%;
+    background-color: none;
     gap: 10px;
     padding: 0 150px 150px 150px;
 }
+
 
 .home-title {
     display: flex;
@@ -28,7 +28,7 @@
     padding: 5px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .card-image {
@@ -41,6 +41,67 @@
     display: flex;
     flex-direction: column;
 }
+.slick-prev, .slick-next {
+    display: block !important; 
+    width: 40px;
+    height: 40px;
+    background-color: lightgray; 
+    color: gray;
+
+    border-radius: 17px;
+    z-index: 20;
+    top: 30%;
+
+    position: absolute;
+  }
+
+.slick-prev:before, .slick-next:before {
+    color: gray !important; 
+    background-color: lightgray; 
+    border-radius: 17px;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+  
+  .slick-prev {
+    left: 50px; 
+  
+  }
+  
+  .slick-next {
+    right: 90px; 
+  }
+  .slick-prev:hover, .slick-next:hover {
+  background-color: gray;
+  color: black; 
+}
+.slick-dots {
+    position: relative;
+    bottom: -20px; 
+    display: flex !important;
+    justify-content: center; 
+    margin-top: 10px; 
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .slick-dots li.slick-active button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+   
+    border:1px solid gray;
+  }
+  
+  .slick-dots li.slick-inactive button{
+   border: none;
+  }
+  .slick-dots li button:hover{
+   background-color: gray;
+   border-radius: 50%;
+  }
 
 .card-content-title {
     display: flex;
