@@ -18,31 +18,31 @@ import { FaChevronLeft,FaChevronRight } from 'react-icons/fa';
 import "./Home.css"
 
 const Properties = () => {
-  const CustomPrevArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <button
-        className={className}
-        style={{ ...style, display: "block", background: "black" }} // You can change styles here
-        onClick={onClick}
-      >
-        <FaChevronLeft />
-      </button>
-    );
-  };
+  // const CustomPrevArrow = (props) => {
+  //   const { className, style, onClick } = props;
+  //   return (
+  //     <button
+  //       className={className}
+  //       style={{ ...style, display: "block", background: "black" }} // You can change styles here
+  //       onClick={onClick}
+  //     >
+  //       <FaChevronLeft />
+  //     </button>
+  //   );
+  // };
   
-  const CustomNextArrow = (props) => {
-    const { className, style, onClick } = props;
-    return (
-      <button
-        className={className}
-        style={{ ...style, display: "block", background: "blue" }} // You can change styles here
-        onClick={onClick}
-      >
-        <FaChevronRight />
-      </button>
-    );
-  };
+  // const CustomNextArrow = (props) => {
+  //   const { className, style, onClick } = props;
+  //   return (
+  //     <button
+  //       className={className}
+  //       style={{ ...style, display: "block", background: "blue" }} // You can change styles here
+  //       onClick={onClick}
+  //     >
+  //       <FaChevronRight />
+  //     </button>
+  //   );
+  // };
   
   
     const settings = {
@@ -52,8 +52,8 @@ const Properties = () => {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows:true,
-      prevArrow:<CustomPrevArrow/> ,
-      nextArrow:<CustomNextArrow/> 
+      // prevArrow:<CustomPrevArrow/> ,
+      // nextArrow:<CustomNextArrow/> 
     }
   
   return (
