@@ -4,17 +4,14 @@ import React from 'react';
 import { imagearray1 } from '../Constants'; 
 import Properties from './Properties';
 import Blog from "./Blog"
-import { FaMapMarkerAlt } from 'react-icons/fa'; 
+import { FaArrowLeft, FaMapMarkerAlt } from 'react-icons/fa'; 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import clienttag from "../assets/clienttag.png";
-
-import image4 from "../assets/image4.png";
-import image5 from "../assets/image5.png";
-import image6 from "../assets/image6.png";
-import image7 from "../assets/image7.png";
 import image8 from "../assets/image8.png";
+
+
 
 import { FaBed, FaBath, FaRulerCombined } from 'react-icons/fa';
 import { FaArrowRight,FaChevronLeft,FaChevronRight } from 'react-icons/fa';
@@ -22,12 +19,15 @@ import "./Home.css";
 
 const App = () => {
 
+
+
   const settings1 = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+   
    
    
     responsive: [
@@ -82,24 +82,6 @@ const App = () => {
     </div>
     <Properties/>
     
-    <div className='container2' id="members">
-    <div className='home-title'>
-            <h5>Best Properties</h5>
-            <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
-        </div>
-        <div className='main-container3'>
-        <div className='image-links'>
-          <img src={image4} alt="link" className='image4'/>
-          <div className='top-links-side'>
-          <img src={image5} alt="link1" className='link-image'/>
-          <img src={image6} alt="link2" className='link-image'/>
-          </div>
-        </div>
-        <img src={image7} alt="link2" className='image4'/>
-
-        </div>
-        
-    </div>
    
     <div className='container4' >
        <div className='container4-top-flex'>
