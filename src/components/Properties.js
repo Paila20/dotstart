@@ -118,8 +118,8 @@ const Properties = () => {
 
           </Slider>
           <div className='top-links-side'>
-          <img src={image5} alt="link1" className='link-image'/>
-          <img src={image6} alt="link2" className='link-image'/>
+          <img src={image5} alt="link1" className='link-image1'/>
+          <img src={image6} alt="link2" className='link-image1'/>
           </div>
         </div>
         <img src={image7} alt="link2" className='image4'/>

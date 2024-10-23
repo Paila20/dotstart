@@ -5,7 +5,8 @@ import Footer from "./components/Footer";
 import Vector from "./assets/Vector.png";
 import callIcon from "./assets/callIcon.png";
 import avatar from "./assets/avatar.png";
-import { FaChevronDown, FaBars, FaTimes } from 'react-icons/fa';
+import searchicon from "./assets/searchicon.png";
+import { FaChevronDown, FaBars, FaTimes,FaSearch } from 'react-icons/fa';
 import "./App.css";
 
 const App = () => {
@@ -54,7 +55,10 @@ const App = () => {
           <img src={callIcon} alt="callIcon" /> <p>+68 685 88666</p>
           <img src={avatar} alt="avatar" className="header-icon2" />
           <button>Add Property</button>
+
+         
         </div>
+       
         {isMenuOpen && (
           <div className="header-dropdown">
             <div className="header-dropdown-content">
@@ -100,6 +104,19 @@ const App = () => {
           </div>
         )}
       </div>
+          <div className='homepage-middle'>
+            <button>LET US GUIDE YOUR HOME</button>
+            <h1>Discover a place you'll love to live</h1>
+            <div className='homepage-options'>
+              <p className='option1'>Sale</p>
+              <p>Rent</p>
+            </div>
+            <div className='searchbar'>
+              <input placeholder="Enter Names,Keywords..."/>
+              <img src={searchicon} alt="searchicon"/>
+
+            </div>
+          </div>
 
       <Home />
       <Footer />

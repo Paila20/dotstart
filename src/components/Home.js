@@ -4,7 +4,7 @@ import React from 'react';
 import { imagearray1 } from '../Constants'; 
 import Properties from './Properties';
 import Blog from "./Blog"
-import { FaArrowLeft, FaMapMarkerAlt } from 'react-icons/fa'; 
+import {FaMapMarkerAlt } from 'react-icons/fa'; 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -14,7 +14,7 @@ import image8 from "../assets/image8.png";
 
 
 import { FaBed, FaBath, FaRulerCombined } from 'react-icons/fa';
-import { FaArrowRight,FaChevronLeft,FaChevronRight } from 'react-icons/fa';
+import { FaArrowRight} from 'react-icons/fa';
 import "./Home.css";
 
 const App = () => {

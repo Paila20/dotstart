@@ -56,29 +56,29 @@
   
     border-radius: 17px;
     z-index: 20;
-    top: 30%;
+    top: 50%;
 
     position: absolute;
   }
 
 .slick-prev:before, .slick-next:before {
-    /* color: gray !important;  */
-    background-color: gray; 
+    color: black;
+    background-color: lightgray; 
     border-radius: 17px;
     width: 40px;
     height: 40px;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
   
   .slick-prev {
-    left: 100px; 
+    left: -5px; 
     margin-left: 50px;
   
   }
   
   .slick-next {
-    right: 60px;
+    right: -5px;
     margin-right: 80px; 
   }
   .slick-prev:hover, .slick-next:hover {
@@ -87,7 +87,7 @@
 }
 .slick-dots {
     position: absolute;
-    /* bottom: 180px;  */
+ 
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -181,6 +181,11 @@
     max-width: 250px; 
     height: auto;
 }
+.link-image1 {
+    width: 50%; 
+    max-width: 250px; 
+    height: auto;
+}
 
 .link-image2 {
     width: 65%;
@@ -243,11 +248,13 @@
 }
 .image4{
     width: 100%;
-    max-width: 500px;
+    max-width: 520px;
     height: auto;
+
 }
 .image4-img{
     width: 100%;
+    border-radius: 10px;
 }
 .container4{
     width: 95%;
@@ -285,7 +292,7 @@
 }
 .clienttag{
     position: absolute;
-     top: 475%;
+     top: 597%;
     left: 23%;
     width: 8%; 
 }
@@ -450,11 +457,20 @@
         margin-bottom: 30px;
         margin-left: 20px;
     }
+    .header-icon{
+        width: 20%;
+    }
     .slick-prev{
         left: -10px;
     }
     .slick-next{
-        margin-right: 110px;
+        margin-right: 90px;
+    }
+    .link-image{
+        width: 47%;
+    }
+    .link-image1{
+        width: 47%;
     }
    
     .top-links, 
@@ -462,8 +478,8 @@
         flex-direction: column; 
         justify-content: center;
         align-items: center; 
-        gap: 10px; 
-        width: 100%;
+        gap: 5px; 
+        width: 95%;
     }
     .link-image2 {
         width: 100%;
@@ -526,12 +542,24 @@
     }
     .clienttag {
         position: absolute;
-        top: 590%;
+        top: 790%;
         left: 24%;
         width: 8%;
     }
     .slick-dots{
         top: 100%;
+    }
+    .top-links-side{
+        width: 100%;
+    }
+    .image4-img{
+        width: 95%;
+    }
+    .image-links{
+        width: 95%;
+    }
+    .container7-bottom button {
+        width: 100%;
     }
 } 
 
