@@ -21,7 +21,7 @@ const Footer = () => {
     <div className='Footer' id="pages">
        <div className='container6'>
         <div className='home-title'>
-           <h5>Recent Articles & News</h5>
+           <h2>Recent Articles & News</h2>
            <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
         </div>
         <div>
@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
         <div className='container7-bottom'>
           <div>
-            <h3>Become a Real Estate Agent</h3>
+            <h2>Become a Real Estate Agent</h2>
             <p>We only work with the best companies around the globe</p>
           </div>
           <a href="/" >

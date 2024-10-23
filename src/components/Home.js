@@ -100,21 +100,21 @@ const App = () => {
        </div>
        <div className='container4-bottom'>
         <div >
-          <h1>$18M</h1>
+          <h2>$18M</h2>
           <h6>
             Owned from properties transactions
           </h6>
         </div>
         <div>
-          <h1>26K</h1>
+          <h2>26K</h2>
           <h6>Properties for Buy</h6>
         </div>
         <div>
-          <h1>15K</h1>
+          <h2>15K</h2>
           <h6>Properties for Sell</h6>
         </div>
         <div>
-          <h1>800</h1>
+          <h2>800</h2>
           <h6>Daily completed transactions</h6>
         </div>
        </div>

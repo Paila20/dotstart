@@ -61,7 +61,7 @@ const Properties = () => {
       <div className='container2' id="properties">
 
 <div className='home-title'>
-    <h3>Find Properties in These Cities</h3>
+    <h2>Find Properties in These Cities</h2>
     <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
 </div>
 <div className='main-container2'>
@@ -86,7 +86,7 @@ const Properties = () => {
 </div>
 <div className='container3'>
 <div className='home-title'>
-    <h4>Why Choose Us</h4>
+    <h2>Why Choose Us</h2>
     <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
 </div>
 <div className="icon-container">
@@ -104,9 +104,9 @@ const Properties = () => {
 <div>
 
 </div>
-<div className='container2' id="members">
+<div className='container2-2' id="members">
     <div className='home-title'>
-            <h5>Best Properties</h5>
+            <h2>Best Properties</h2>
             <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
         </div>
         <div className='main-container3'>

@@ -29,10 +29,12 @@ const Blog = () => {
         </div>
         <div>
         <div className='container5-top-side'>
+          <div className='container5-div'>
           <img src={image9} alt="image9"/>
-         <div>
-           <p>Cameron Williamson</p>
+         <div className='container5-imgdiv'>
+           <p className='container5-p'>Cameron Williamson</p>
            <h6>Designer</h6>
+         </div>
          </div>
            
         </div>
