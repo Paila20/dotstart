@@ -146,75 +146,14 @@ a {
 a:hover{
   color: red;
 }
-/* .homepage-middle{
-  width: 25%;
-  position: absolute;
-  top: 30%;
-  left: 40%;
-  right: 40%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #ffffff;
-}
-.homepage-middle button{
-  background-color: transparent;
-  color: #ffffff;
-  border-radius: 20px;
-  border: 1px solid #ffffff;
-  padding: 10px;
-  font-size: 10px;
-}
-.homepage-middle h1{
-  font-size: 30px;
-  text-align: center;
-  font-weight: 600;
-}
-.homepage-options{
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-  font-weight: 100;
-}
-.option1{
-  border-bottom: 1px solid #ffffff;
-}
-.searchbar{
-  width: 100%;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content:center;
-  border-radius: 30px;
-  background-color: #ffffff;
-  padding: 10px;
-  padding-right: 5px;
-  margin:20px
-}
-.searchbar input{
-  width: 90%;
-  border: #ffffff;
-  color: black;
- 
-}
-.searchbar img{
-  background-color: #E7C873;
-  padding: 10px;
-  border-radius: 50px;
-  
-}
- */
 
  .homepage-middle {
-  width: 90%; /* Make width responsive */
-  max-width: 500px; /* Limit max width for larger screens */
+  width: 90%;
+  max-width: 500px;
   position: absolute;
-  top: 25%; /* Adjusted for better centering on all screens */
+  top: 25%;
   left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
+  transform: translateX(-50%); 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,11 +167,11 @@ a:hover{
   border-radius: 20px;
   border: 1px solid #ffffff;
   padding: 10px 20px;
-  font-size: 0.5rem; /* Use relative units */
+  font-size: 0.5rem; 
 }
 
 .homepage-middle h1 {
-  font-size: 2rem; /* Adjusted for responsive font size */
+  font-size: 2rem; 
   text-align: center;
   font-weight: 600;
   margin: 20px 0;
@@ -244,7 +183,7 @@ a:hover{
   gap: 30px;
   justify-content: center;
   align-items: center;
-  font-size: 1rem; /* Use relative units */
+  font-size: 1rem; 
   font-weight: 100;
 }
 
@@ -254,7 +193,7 @@ a:hover{
 
 .searchbar {
   width: 100%;
-  max-width: 500px; /* Limit max width */
+  max-width: 500px; 
   height: 40px;
   display: flex;
   align-items: center;
