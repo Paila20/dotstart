@@ -52,9 +52,18 @@ const App = () => {
           </a>
         </div>
         <div className={`header-right ${isMenuOpen ? 'open' : ''}`}>
+          <a href="#contact">
+            <div className='callicondiv'>
           <img src={callIcon} alt="callIcon" /> <p>+68 685 88666</p>
+          </div>
+          </a>
+          <a href="#properties">
           <img src={avatar} alt="avatar" className="header-icon2" />
+          </a>
+            
+          <a href="#pages">
           <button>Add Property</button>
+          </a>
 
          
         </div>
