@@ -62,7 +62,7 @@ const Properties = () => {
 
 <div className='home-title'>
     <h2>Find Properties in These Cities</h2>
-    <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
+    <h5>Lorem ipsum dolor sit amet, consecter adipisicing elite</h5>
 </div>
 <div className='main-container2'>
 
@@ -87,7 +87,7 @@ const Properties = () => {
 <div className='container3'>
 <div className='home-title'>
     <h2>Why Choose Us</h2>
-    <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
+    <h5>Lorem ipsum dolor sit amet, consecter adipisicing elite</h5>
 </div>
 <div className="icon-container">
 {IconArray.map((card, index) => (
@@ -107,7 +107,7 @@ const Properties = () => {
 <div className='container2-2' id="members">
     <div className='home-title'>
             <h2>Best Properties</h2>
-            <p>Lorem ipsum dolor sit amet, consecter adipisicing elite</p>
+            <h5>Lorem ipsum dolor sit amet, consecter adipisicing elite</h5>
         </div>
         <div className='main-container3'>
         <div className='image-links'>

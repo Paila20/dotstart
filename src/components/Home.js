@@ -53,7 +53,7 @@ const App = () => {
       
         <div className='home-title'>
             <h2>Homes For You</h2>
-            <p>Based on your view history</p>
+            <h5>Based on your view history</h5>
         </div>
   
       <Slider {...settings1} className="main-card">
