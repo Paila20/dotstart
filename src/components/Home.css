@@ -310,18 +310,18 @@
     align-items: center;
     justify-content: center;
     padding: 5%;
-    width: 100%;
+    width: 90%;
     padding-bottom: 1%;
     margin-left: 30%;
     /* margin-right: 20%; */
 
 }
 .container4-side{
-    width: 25%;
+    width: 35%;
   color: #FFFFFF;
   font-family: Roboto;
   margin-right: 30%;
-  margin-left: -20px;
+  margin-left: 0px;
 }
 .container4-side h3{
     width: 50%;
@@ -570,7 +570,7 @@
         width: 49%;
     }
     .link-image1{
-        width: 47%;
+        width: 49%;
     }
    
     .top-links, 

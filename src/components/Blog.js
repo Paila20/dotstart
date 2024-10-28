@@ -18,12 +18,12 @@ const Blog = () => {
           <h5>various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like</h5>
           <div className='container5-flex'>
           <div >
-            <h2>10M+</h2>
-            <h5>happy people</h5>
+            <h3>10m+</h3>
+            <h5>Happy people</h5>
           </div>
           <div>
-            <h2>4.88</h2>
-            <h5>overall ratting</h5>
+            <h3>4.88</h3>
+            <h5>Overall ratting</h5>
           </div>
           </div>
         </div>
