@@ -41,16 +41,16 @@ const Footer = () => {
        <div className='container7'>
         <div className='container7-top'>
             <div className='container7-names'>
-                <h5>Real Estate</h5>
-                <h5>New Homes</h5>
-                <h5>Popular Area</h5>
-                <h5>Popular Searches</h5>
+                <h4>Real Estate</h4>
+                <h4>New Homes</h4>
+                <h4>Popular Area</h4>
+                <h4>Popular Searches</h4>
             </div>
             <div className='data-estates'>
              <div className="data-container">
                   {data1.map((card, index) => (
                 <div className="" key={index}>
-                    <p>{card.data}</p>
+                    <h5>{card.data}</h5>
                    
                 </div>
                 ))}
@@ -58,7 +58,7 @@ const Footer = () => {
             <div className="data-container">
                   {data2.map((card, index) => (
                 <div className="" key={index}>
-                    <p>{card.data}</p>
+                    <h5>{card.data}</h5>
                    
                 </div>
                 ))}
@@ -66,7 +66,7 @@ const Footer = () => {
             <div className="data-container">
                   {data3.map((card, index) => (
                 <div className="" key={index}>
-                    <p>{card.data}</p>
+                    <h5>{card.data}</h5>
                    
                 </div>
                 ))}
@@ -74,7 +74,7 @@ const Footer = () => {
             <div className="data-container">
                   {data4.map((card, index) => (
                 <div className="" key={index}>
-                    <p>{card.data}</p>
+                    <h5>{card.data}</h5>
                    
                 </div>
                 ))}
@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="data-container">
                   {data5.map((card, index) => (
                 <div className="" key={index}>
-                    <p>{card.data}</p>
+                    <h5>{card.data}</h5>
                    
                 </div>
                 ))}
@@ -90,7 +90,7 @@ const Footer = () => {
             <div className="data-container">
                   {data6.map((card, index) => (
                 <div className="" key={index}>
-                    <p>{card.data}</p>
+                    <h5>{card.data}</h5>
                    
                 </div>
                 ))}
@@ -100,7 +100,7 @@ const Footer = () => {
         <div className='container7-bottom'>
           <div>
             <h2>Become a Real Estate Agent</h2>
-            <p>We only work with the best companies around the globe</p>
+            <h5>We only work with the best companies around the globe</h5>
           </div>
           <a href="/" >
           <button>Register Now <FaArrowRight/></button>
@@ -124,71 +124,71 @@ const Footer = () => {
         </div>
         <div className='footer-middle' id="contact">
           <div>
-           <h4> Subscribe</h4>
+           <h3> Subscribe</h3>
            <div className='footer-middle-left'>
-            <p>Your Email</p>
+            <h4>Your Email</h4>
             <button>Send  <FaArrowRight/></button>
            </div>
-           <p>Subscribe to our newsletter to receive our weekly feed</p>
+           <h4>Subscribe to our newsletter to receive our weekly feed</h4>
           </div>
           <div className='footer-middle-middle'>
           <div  >
-            <h4> Discover</h4>
+            <h3> Discover</h3>
             <a href="/">
-            <p>Miami</p>
+            <h4>Miami</h4>
             </a>
             <a href="/">
-            <p>NewYork</p>
+            <h4>NewYork</h4>
             </a>
             <a href="/">
-            <p>Chicago</p>
+            <h4>Chicago</h4>
             </a>
             <a href="/">
-            <p>Florida</p>
+            <h4>Florida</h4>
             </a>
             <a href="/">
-            <p>Los Angeles</p>
+            <h4>Los Angeles</h4>
             </a>
             <a href="/">
-            <p>San Deiugo</p>
+            <h4>San Deiugo</h4>
             </a>
           </div>
           <div>
-            <h4>Quick Links</h4>
+            <h3>Quick Links</h3>
             <a href="#home">
-            <p>About</p>
+            <h4>About</h4>
             </a>
             <a href="#contact">
-            <p>Contact</p>
+            <h4>Contact</h4>
             </a>
             <a href="#blog">
-            <p>FAQ's</p>
+            <h4>FAQ's</h4>
             </a>
             <a href="#blog">
-            <p>Blog</p>
+            <h4>Blog</h4>
             </a>
             
-            <p>Pricing Plans</p>
+            <h4>Pricing Plans</h4>
             
 
-            <p>Privacy Policy</p>
+            <h4>Privacy Policy</h4>
           
            
-            <p>Terms & Conditions</p>
+            <h4>Terms & Conditions</h4>
             
           </div>
           <div>
-            <h4>Contact Us</h4>
-            <p>hi@justhome.com</p>
-            <p>(123)456-7890</p>
+            <h3>Contact Us</h3>
+            <h4>hi@justhome.com</h4>
+            <h4>(123)456-7890</h4>
           </div>
           <div>
-            <h4>Our Address</h4>
-            <p>99 fifth Avenue,3rd floor</p>
-            <p>San Francisco,CA 1980</p>
+            <h3>Our Address</h3>
+            <h4>99 fifth Avenue,3rd floor</h4>
+            <h4>San Francisco,CA 1980</h4>
           </div>
           <div className='footer-middle-right'>
-            <h4>Get The App</h4>
+            <h3>Get The App</h3>
             <img src={applestore} alt="applestore"/>
             <img src={googlepay} alt="googlepay"/>
           </div>
@@ -196,7 +196,7 @@ const Footer = () => {
 
         </div>
         <div className='footer-bottom'>
-                <p>CopyRight &copy 2024. JustHome</p>
+                <h4>CopyRight &copy 2024. JustHome</h4>
         </div>
 
        </div>

@@ -10,10 +10,11 @@
 .main-card {
     width: 100%;
     background-color: none;
-    gap: 10px;
+   display: flex;
+    gap: 30px;
     padding: 0  150px 150px 150px;
     margin-top: -50px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 /* .slick-slider{
     width: 100%;
@@ -36,9 +37,11 @@
 .card {
     background: #FFFFFF;
     padding: 5px;
+    margin: 10px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     max-width: 90%;
+    width: 80%;
 }
 
 .card-image {
@@ -51,7 +54,7 @@
     display: flex;
     flex-direction: column;
 }
-.slick-prev, .slick-next {
+/* .slick-prev, .slick-next {
     display: block !important; 
     width: 40px;
   
@@ -85,7 +88,14 @@
   .slick-prev:hover, .slick-next:hover {
   background-color: gray;
   color: black;
-}
+} */
+
+/* .nextarrow{
+    display: block;
+    background: lightslategrey;
+    top: 50%;
+    right: 20%;
+} */
 .slick-dots {
     position: absolute;
  
@@ -128,7 +138,11 @@
 .card-location {
     display: flex;
     align-items: center;
-    margin-top: 8px;
+    margin-top: -15px;
+    gap: 10px;
+}
+.card-location h5{
+    font-weight: 300;
 }
 
 .card-content-icons {
@@ -136,13 +150,17 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 10px; 
+    margin-top: -10px; 
+    gap: 20px;
+   
 }
 
-.card-content-icons p {
+.card-content-icons h5 {
     display: flex;
     align-items: center;
+    gap:5px;
     margin-right: 10px; 
+    font-weight: 300;
 }
 
 .container2 {
@@ -239,11 +257,12 @@
     gap: 50px;
     margin: -100px 0;
 }
-.icon-container p{
-    font-size: 13px;
-}
 .icon-container h5{
-    font-size: 18px;
+    /* font-size: 13px; */
+    font-weight: 300;
+}
+.icon-container h4{
+    /* font-size: 18px; */
     margin-bottom: 0;
 }
 .icon-image-card{
@@ -275,7 +294,7 @@
     border-radius: 10px;
 }
 .container4{
-    width: 95%;
+    width: 98%;
     background: #1F4B43;
     margin: 50px auto;
     max-width: 100%;
@@ -291,15 +310,25 @@
     align-items: center;
     justify-content: center;
     padding: 5%;
-    width: 60%;
+    width: 100%;
     padding-bottom: 1%;
+    margin-left: 30%;
+    /* margin-right: 20%; */
 
 }
 .container4-side{
-    width: 45%;
+    width: 25%;
   color: #FFFFFF;
   font-family: Roboto;
-  margin-right: 10%;
+  margin-right: 30%;
+  margin-left: -20px;
+}
+.container4-side h3{
+    width: 50%;
+}
+.container4-side h6{
+    
+    font-weight: 300;
 }
 .container4-side button{
  background: #E7C873;
@@ -310,14 +339,15 @@
 }
 .clienttag{
     position: absolute;
-     top: 597%;
-    left: 23%;
+     top: 592%;
+    left: 18%;
     width: 8%; 
 }
 .image8{
 
     width: 65%;
     height: auto;
+  
 }
 .container4-bottom{
 
@@ -349,16 +379,27 @@
 }
 .container5-top{
     display: flex;
-    width: 60%;
+    width: 80%;
     gap: 200px;
+    margin-left: 80px;
+}
+.container5-top h5{
+    font-weight: 300;
+    width: 70%;
+    
 }
 .container5-flex{
     display: flex;
     gap: 20px;
     
 }
+.container5-flex h5{
+    font-weight: 300;
+    width: 100%;
+    margin-top: -15px;
+}
 .container5-top-side{
-    width: 10%;
+    width: 20%;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -369,6 +410,9 @@
 .container5-imgdiv{
     margin-top: 20px;
 }
+.container5-imgdiv h6{
+    font-weight: 300;
+}
 .container5-div{
     
     display: flex;
@@ -378,7 +422,14 @@
 .container5-bottom{
     text-align: center;
     border-top: 1px solid lightgray;
-    margin: 50px 0;
+    /* margin: 20px 0; */
+    margin-bottom: 60px;
+    padding-top: 50px;
+
+}
+.container5-bottom h4{
+    font-weight: 300;
+    margin-bottom: 30px;
 }
 .container5-bottom-images{
     display: flex;
@@ -400,12 +451,13 @@
 
 @media screen and (max-width: 1000px) {
     .main-card {
-        flex-direction: column; 
+        /* flex-direction: column;  */
         margin: 0 auto;
         justify-content: center;
         align-items: center;
         padding: 20px;
         margin-bottom: 30px;
+        margin-top: -75px;
     }
    
     .top-links, 
@@ -442,7 +494,7 @@
         flex-direction: column;
     }
     .container4-side{
-        width: 100%;
+        width: 65%;
     }
     .container4{
         width: 70%;
@@ -484,29 +536,36 @@
     .slick-dots{
         top: 100%;
     }
+    .clienttag{
+        position: absolute;
+         top: 840%;
+        left: 28%;
+        width: 8%; 
+    }
 } 
 
 
 
 @media screen and (max-width: 600px) {
     .main-card {
-        flex-direction: column; 
+        /* flex-direction: column;  */
         margin: 0 auto;
         justify-content: center;
         align-items: center;
         padding: 20px;
         margin-bottom: 30px;
-        margin-left: 20px;
+        /* margin-left: 20px; */
+        margin-top: -75px;
     }
     .header-icon{
         width: 20%;
     }
-    .slick-prev{
+    /* .slick-prev{
         left: -10px;
     }
     .slick-next{
-        margin-right: 90px;
-    }
+        margin-right: 80px;
+    } */
     .link-image{
         width: 47%;
     }
@@ -533,7 +592,7 @@
         
     }
     .container3{
-        width: 75%;
+        width: 100%;
     }
     .main-container3 {
         width: 100%;
@@ -548,7 +607,8 @@
         flex-direction: column;
     }
     .container4-side{
-        width: 100%;
+        width: 65%;
+        margin-left: 20px;
     }
     .container4{
         width: 90%;
@@ -559,17 +619,21 @@
         gap: 10px;
 
     }
-    .container4-bottom h1{
-       font-size: 10px;
+    .container4-bottom h2{
+       font-size: 16px;
+    }
+    .container4-bottom h6{
+        font-size: 7px;
     }
     .container5-top{
         flex-direction: column;
+        flex-wrap: wrap;
         width: 100%;
         gap: 10px;
       
     }
     .icon-image-card{
-        width: 200%;
+        width: 100%;
     }
     .container5-bottom-images{
         flex-wrap: wrap;
@@ -578,12 +642,12 @@
         align-items: center;
     }
     .container5{
-        width: 70%;
+        width: 100%;
        
     }
     .clienttag {
         position: absolute;
-        top: 790%;
+        top: 835%;
         left: 24%;
         width: 8%;
     }

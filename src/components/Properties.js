@@ -18,31 +18,63 @@ import { FaChevronLeft,FaChevronRight } from 'react-icons/fa';
 import "./Home.css"
 
 const Properties = () => {
-  // const CustomPrevArrow = (props) => {
-  //   const { className, style, onClick } = props;
-  //   return (
-  //     <button
-  //       className={className}
-  //       style={{ ...style, display: "block", background: "black" }} // You can change styles here
-  //       onClick={onClick}
-  //     >
-  //       <FaChevronLeft />
-  //     </button>
-  //   );
-  // };
+  const CustomPrevArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <button
+        // className={className}
+        // style={{ ...style, display: "block", backgroundColor: "gray" , borderRadius:17, color:"black",width:40,height:30,zIndex:10,marginLeft:40}} 
+        style={{
+          display: "block",
+          backgroundColor: "gray",
+          borderRadius: 17,
+          color: "white",
+          width: 40,
+          height: 30,
+          zIndex: 10,
+          // left: arrowPosition,
+          left:"5%",
+          position: "absolute",
+          top: "50%", // centered vertically
+          transform: "translateY(-50%)",
+          border: "none",
+          cursor: "pointer"
+        }}
+        onClick={onClick}
+      >
+        <FaChevronLeft />
+      </button>
+    );
+  };
   
-  // const CustomNextArrow = (props) => {
-  //   const { className, style, onClick } = props;
-  //   return (
-  //     <button
-  //       className={className}
-  //       style={{ ...style, display: "block", background: "blue" }} // You can change styles here
-  //       onClick={onClick}
-  //     >
-  //       <FaChevronRight />
-  //     </button>
-  //   );
-  // };
+  const CustomNextArrow = (props) => {
+    const { className, style, onClick } = props;
+    return (
+      <button
+        // className={className}
+        // style={{ ...style, display: "block", background: "gray", borderRadius:17, color:"black",width:40,height:30,zIndex:10,marginRight:40 }} 
+        style={{
+          display: "block",
+          backgroundColor: "gray",
+          borderRadius: 17,
+          color: "white",
+          width: 40,
+          height: 30,
+          zIndex: 10,
+          // left: arrowPosition,
+          right:"5%",
+          position: "absolute",
+          top: "50%", // centered vertically
+          transform: "translateY(-50%)",
+          border: "none",
+          cursor: "pointer"
+        }}
+        onClick={onClick}
+      >
+        <FaChevronRight />
+      </button>
+    );
+  };
   
   
     const settings = {
@@ -51,9 +83,9 @@ const Properties = () => {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      arrows:true,
-      // prevArrow:<CustomPrevArrow/> ,
-      // nextArrow:<CustomNextArrow/> 
+      // arrows:true,
+      prevArrow:<CustomPrevArrow/> ,
+      nextArrow:<CustomNextArrow/> 
     }
   
   return (
@@ -93,8 +125,8 @@ const Properties = () => {
 {IconArray.map((card, index) => (
   <div className="icon-image-card" key={index}>
     <img src={card.src} alt={card.title} className="icon-image" />
-    <h5>{card.title}</h5>
-    <p>{card.desc}</p>
+    <h4>{card.title}</h4>
+    <h5>{card.desc}</h5>
   </div>
 ))}
 </div>

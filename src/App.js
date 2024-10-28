@@ -32,29 +32,36 @@ const App = () => {
         <div className={`header-middle ${isMenuOpen ? 'open' : ''}`}>
         <a href='#home' className='anchor-links'>
           <div className="header-link">
-         home 
+            <h4>
+         Home 
+         </h4>
              <FaChevronDown /></div>
              </a>
         <a href='#properties' >
-          <div className="header-link">Listings <FaChevronDown /></div>
+          <div className="header-link">
+            <h4>Listings</h4> <FaChevronDown /></div>
           </a>
           <a href='#members' >
-          <div className="header-link">Members <FaChevronDown /></div>
+          <div className="header-link">
+            <h4>Members</h4> <FaChevronDown /></div>
           </a>
           <a href="#blog">
-          <div className="header-link">Blog <FaChevronDown /></div>
+          <div className="header-link">
+            <h4>Blog</h4> <FaChevronDown /></div>
           </a>
           <a href='#pages'>
-          <div className="header-link">Pages <FaChevronDown /></div>
+          <div className="header-link">
+            <h4>Pages</h4> <FaChevronDown /></div>
           </a>
           <a href="#contact">
-          <div>Contact</div>
+          <div>
+            <h4>Contact </h4></div>
           </a>
         </div>
         <div className={`header-right ${isMenuOpen ? 'open' : ''}`}>
           <a href="#contact">
             <div className='callicondiv'>
-          <img src={callIcon} alt="callIcon" /> <p>+68 685 88666</p>
+          <img src={callIcon} alt="callIcon" /> <h4>+68 685 88666</h4>
           </div>
           </a>
           <a href="#properties">
@@ -117,8 +124,8 @@ const App = () => {
             <button>LET US GUIDE YOUR HOME</button>
             <h1>Discover a place you'll love to live</h1>
             <div className='homepage-options'>
-              <p className='option1'>Sale</p>
-              <p>Rent</p>
+              <h5 className='option1'>Sale</h5>
+              <h5>Rent</h5>
             </div>
             <div className='searchbar'>
               <input placeholder="Enter Names,Keywords..."/>

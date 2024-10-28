@@ -15,15 +15,15 @@ const Blog = () => {
       <div className='container5-top'>
         <div>
           <h2>What our customers are saying us?</h2>
-          <p>various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like</p>
+          <h5>various versions have evolved over the years, sometimes by accident, sometimes on purpose injected humour and the like</h5>
           <div className='container5-flex'>
           <div >
-            <h1>10M+</h1>
-            <p>happy people</p>
+            <h2>10M+</h2>
+            <h5>happy people</h5>
           </div>
           <div>
-            <h1>4.88</h1>
-            <p>overall ratting</p>
+            <h2>4.88</h2>
+            <h5>overall ratting</h5>
           </div>
           </div>
         </div>
@@ -32,21 +32,21 @@ const Blog = () => {
           <div className='container5-div'>
           <img src={image9} alt="image9"/>
          <div className='container5-imgdiv'>
-           <p className='container5-p'>Cameron Williamson</p>
+           <h3 className='container5-p'>Cameron Williamson</h3>
            <h6>Designer</h6>
          </div>
          </div>
            
         </div>
-        <p>Searches for multiplexes,property comparisions, and the loan
+        <h5>Searches for multiplexes,property comparisions, and the loan
            estimator.Works great.Lorem ipsum dolor sit amet
           consectetur adipiscing elite, sed do eiudsmon tempor incididunt ut labour et dores.
-        </p>
+        </h5>
         </div>
 
       </div>
       <div className='container5-bottom'>
-        <p>Thousands of worlds leading companies trust Space</p>
+        <h4>Thousands of worlds leading companies trust Space</h4>
         <div className='container5-bottom-images'>
         <img src={image10} alt="image10"/>
         <img src={image11} alt="image11"/>
