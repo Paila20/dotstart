@@ -567,7 +567,7 @@
         margin-right: 80px;
     } */
     .link-image{
-        width: 47%;
+        width: 49%;
     }
     .link-image1{
         width: 47%;
@@ -578,7 +578,7 @@
         flex-direction: column; 
         justify-content: center;
         align-items: center; 
-        gap: 5px; 
+        gap: 10px; 
         width: 95%;
     }
     .link-image2 {
@@ -656,6 +656,7 @@
     }
     .top-links-side{
         width: 100%;
+        gap:10px;
     }
     .image4-img{
         width: 95%;
@@ -665,6 +666,9 @@
     }
     .container7-bottom button {
         width: 100%;
+    }
+    .main-container2{
+        gap: 10px;
     }
 } 
 

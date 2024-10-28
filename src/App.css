@@ -358,6 +358,7 @@ a:hover{
 
   .homepage-options {
     gap: 10px; 
+    margin-top: -20px;
   }
 
   .searchbar {
@@ -367,7 +368,13 @@ a:hover{
     padding: 5px;
   }
   
-
+  .searchbar input::placeholder {
+    font-size: 10px; 
+    color: #888; 
+  }
+  .searchbar img{
+    width: 15px;
+  }
  
   
 }
