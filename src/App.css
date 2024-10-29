@@ -255,11 +255,11 @@ a:hover{
 }
 
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
   .homepage-middle {
     top: 2%;
-    width: 70%; 
-    gap: 0rem;
+    width: 100%; 
+    gap: -1rem;
   }
 }
 
@@ -349,7 +349,7 @@ a:hover{
   .homepage-middle {
     top: 15%;
     width: 70%; 
-    gap: 1rem;
+    gap: 0.5rem;
   }
 
   .homepage-middle h1 {
