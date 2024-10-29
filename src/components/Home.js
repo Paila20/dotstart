@@ -163,6 +163,7 @@ import React, { useEffect, useState } from 'react';
 import { imagearray1 } from '../Constants';
 import Properties from './Properties';
 import Blog from "./Blog";
+import Expert from './Expert';
 import { FaMapMarkerAlt, FaBed, FaBath, FaRulerCombined, FaArrowRight, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -172,17 +173,11 @@ import image8 from "../assets/image8.png";
 import "./Home.css";
 
 const App = () => {
-  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+ 
 
   const PrevArrow = (props) => {
     const { onClick } = props;
-    // const arrowPosition = screenWidth > 1200 ? "5%" : screenWidth > 768 ? "10%" : "10%";
+  
 
     return (
       <button
@@ -195,13 +190,14 @@ const App = () => {
           height: 30,
           zIndex: 10,
           // left: arrowPosition,
-          left:"5%",
+          left:"6%",
           position: "absolute",
-          top: "50%", // centered vertically
+          top: "40%", 
           transform: "translateY(-50%)",
           border: "none",
           cursor: "pointer"
         }}
+        // className='left-custom-button'
         onClick={onClick}
       >
         <FaChevronLeft />
@@ -211,27 +207,29 @@ const App = () => {
 
   const NextArrow = (props) => {
     const { onClick } = props;
-    // const arrowPosition = screenWidth > 1200 ? "90%" : screenWidth > 768 ? "80%" : "70%";
+   
 
     return (
       <button
         style={{
-          display: "block",
+          // display: "block",
           backgroundColor: "lightgray",
           borderRadius: 17,
           color: "black",
           width: 40,
           height: 30,
           zIndex: 10,
-          // left: arrowPosition,
-          right:"5%",
+       
+          right:"5.8%",
+          // right: window.innerWidth < 600 ? "10%" : "5%",
           position: "absolute",
-          top: "50%", // centered vertically
+          top: "40%",
           transform: "translateY(-50%)",
           border: "none",
           cursor: "pointer"
         }}
         onClick={onClick}
+        // className='right-custome-button'
       >
         <FaChevronRight />
       </button>
@@ -255,13 +253,15 @@ const App = () => {
         }
       },
       {
-        breakpoint: 768,
+        breakpoint: 800,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1
         }
-      }
-    ]
+      },
+    ],
+ 
+      
   };
 
   return (
@@ -271,8 +271,9 @@ const App = () => {
           <h2>Homes For You</h2>
           <h5>Based on your view history</h5>
         </div>
-
+       
         <Slider {...settings1} className="main-card">
+         
           {imagearray1.map((card, index) => (
             <div className="card" key={index}>
               <img src={card.src} alt={card.title} className="card-image" />
@@ -293,43 +294,13 @@ const App = () => {
               </div>
             </div>
           ))}
+        
         </Slider>
+        
       </div>
 
       <Properties />
-      <div className='container4'>
-        <div className='container4-top-flex'>
-          <div>
-            <img src={image8} alt="image8" className='image8' />
-            <img src={clienttag} alt="clienttag" className='clienttag' />
-          </div>
-          <div className='container4-side'>
-            <h3>Local expertise for luxury homes</h3>
-            <h6>Pellentesque egestas elementum egestas facilisis sem. Velit nunc egestas ut morbi. Leo id nibh eget fermentum massa pretium. Mi mauris nulla aliquam ut mauris nunc.</h6>
-            <a href="#pages">
-              <button>Learn More <FaArrowRight /></button>
-            </a>
-          </div>
-        </div>
-        <div className='container4-bottom'>
-          <div>
-            <h2>$18M</h2>
-            <h6>Owned from properties transactions</h6>
-          </div>
-          <div>
-            <h2>26K</h2>
-            <h6>Properties for Buy</h6>
-          </div>
-          <div>
-            <h2>15K</h2>
-            <h6>Properties for Sell</h6>
-          </div>
-          <div>
-            <h2>800</h2>
-            <h6>Daily completed transactions</h6>
-          </div>
-        </div>
-      </div>
+      <Expert/>
       <Blog />
     </>
   );

@@ -3,15 +3,23 @@
     background: #F6F8FA;
     margin: 0 auto;
     margin-bottom: 50px;
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     /* max-width: 100%; */
     /* margin-top: 50px; */
 }
-
+.slider-main{
+    display: flex;
+    gap: 5px;
+}
 .main-card {
     width: 100%;
     background-color: none;
    display: flex;
-    gap: 30px;
+    gap: 100px;
+    /* padding: 0 20px; */
     padding: 0  150px 150px 150px;
     margin-top: -50px;
     /* margin-left: 20px; */
@@ -37,17 +45,22 @@
 .card {
     background: #FFFFFF;
     padding: 5px;
-    margin: 10px;
+    /* margin: 10px; */
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    max-width: 90%;
-    width: 80%;
+    max-width: 95%;
+    /* max-width: 300px ; */
+    width: 100%;
+    /* min-width: 60%; */
+    flex: 1;
+    height: 100%;
 }
 
 .card-image {
     width: 100%;
     height: auto;
     border-radius: 10px;
+    /* object-fit: cover; */
 }
 
 .card-content {
@@ -339,10 +352,19 @@
 }
 .clienttag{
     position: absolute;
-     top: 592%;
-    left: 18%;
-    width: 8%; 
+     /* top: 592%;
+    left:23%;
+    width: 8%;  */
+    top: 10px; /* Adjust to position vertically */
+    left: 10px; /* Adjust to position horizontally */
+    width: 25%; /* Adjust size as needed */
+    /* height: 40px; */
+    width: 20%;
 }
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+  }
 .image8{
 
     width: 65%;
@@ -448,16 +470,63 @@
  margin-top:5px ;
 
 }
+.left-custome-button{
+    display: block;
+    background-color: lightgray;
+    border-radius: 17px;
+    color: black;
+    width: 40px;
+    height: 30px;
+    z-index: 10;
+    left: 7%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+}
+.right-custom-button{
+    display: block;
+    background-color: lightgray;
+    border-radius: 17px;
+    color: black;
+    width: 40px;
+    height: 30px;
+    z-index: 10;
+    right: 8%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+}
+.slick-slide > div {
+    margin: 0 10px;
+}
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1200px) {
     .main-card {
         /* flex-direction: column;  */
         margin: 0 auto;
         justify-content: center;
         align-items: center;
-        padding: 20px;
-        margin-bottom: 30px;
-        margin-top: -75px;
+        /* padding: 5px; */
+        margin-bottom: 20px;
+        margin-top: -45px;
+        width: 90%;
+    }
+    /* .card{
+        max-width: 500px;
+    } */
+    .card-content-icons{
+        gap: 5px;
+    }
+    .card-content-icons h5{
+        align-items: center;
+        gap: 0;
+    }
+    .card-title{
+        font-size: 15px;
     }
    
     .top-links, 
@@ -534,28 +603,41 @@
         margin-top: 0;
     }
     .slick-dots{
-        top: 100%;
+        top: 60%;
     }
-    .clienttag{
+    /* .clienttag{
         position: absolute;
          top: 840%;
         left: 28%;
         width: 8%; 
-    }
+    } */
 } 
 
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+    .container{
+        width: 100%;
+    }
     .main-card {
         /* flex-direction: column;  */
         margin: 0 auto;
         justify-content: center;
         align-items: center;
-        padding: 20px;
+        padding: 0;
+        width: 70%;
         margin-bottom: 30px;
-        /* margin-left: 20px; */
+        /* margin-left: 30px; */
         margin-top: -75px;
+    }
+    .card{
+  width: 95%;
+  padding: 10px;
+
+  /* margin: -7px; */
+    }
+    .card-content-icons{
+        gap: 10px;
     }
     .header-icon{
         width: 20%;
@@ -567,10 +649,10 @@
         margin-right: 80px;
     } */
     .link-image{
-        width: 49%;
+        width: 48%;
     }
     .link-image1{
-        width: 49%;
+        width: 48%;
     }
    
     .top-links, 
@@ -645,24 +727,22 @@
         width: 100%;
        
     }
-    .clienttag {
-        position: absolute;
-        top: 835%;
-        left: 24%;
-        width: 8%;
-    }
+    /* .clienttag {
+       width: 50px;
+    } */
     .slick-dots{
         top: 100%;
     }
-    .top-links-side{
+    /* .top-links-side{
         width: 100%;
         gap:10px;
-    }
+    } */
     .image4-img{
         width: 95%;
     }
     .image-links{
         width: 95%;
+        align-items: center;
     }
     .container7-bottom button {
         width: 100%;

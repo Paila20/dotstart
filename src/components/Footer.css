@@ -191,7 +191,7 @@
     font-weight: 300;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
 .footer-middle{
     flex-wrap: wrap;
     width: 100%;
@@ -202,6 +202,7 @@
 .footer-middle-middle{
     flex-wrap: wrap;
     gap: 20px;
+    width: 85%;
 }
 .container7-top{
     flex-wrap: wrap;
@@ -302,8 +303,8 @@
         gap: 20px;
         flex-direction: column;
     }
-    .footer-middle-middle{
+    /* .footer-middle-middle{
         align-items: center;
         justify-content: center;
-    }
+    } */
 }
