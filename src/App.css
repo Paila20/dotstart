@@ -258,7 +258,7 @@ a:hover{
 @media screen and (max-width: 550px) {
   .homepage-middle {
     top: 2%;
-    width: 100%; 
+    /* width: 100%;  */
     gap: -1rem;
   }
 }
@@ -358,9 +358,9 @@ a:hover{
   }
 
   .homepage-middle button {
-    font-size: 0.5em;
-    padding: 0;
-    width: 40%;
+    font-size: 0.4em;
+    /* padding: 0; */
+    /* width: 40%; */
   }
 
   .homepage-options {
@@ -392,7 +392,7 @@ a:hover{
   }
   .homepage-middle button {
     font-size: 0.1em;
-    padding: 0;
-    width: 40%;
+    /* padding: 0; */
+    /* width: 40%; */
   }
 }
